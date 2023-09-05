@@ -1,0 +1,59 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 72px;
+   
+  
+  }
+  .navlist{
+    display: flex;
+    list-style: none;
+    gap: 24px !important;
+    align-items: center !important;
+    height: 100%;
+    justify-content: center !important;
+    
+  }
+
+  .navlist li{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    
+  }
+
+  .navlist li:hover::after{
+   
+    position: absolute;
+    
+    content: '';
+    /* content:attr(class="animate__fadeInLeft"); */
+    
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+  }
+
+  .red_btn{
+
+    height: 31px;
+    width: 75px;
+    background-color: #D01C28;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+
+  }
+
+
+  @media(max-width: 768px) {
+    #Navigation{
+      visibility: hidden !important;
+    }
+  }
+  
